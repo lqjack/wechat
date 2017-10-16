@@ -1,6 +1,16 @@
-<ion-tabs #mainTabs>
-  <ion-tab [root]="testRoot" tabTitle="test" tabIcon="zhifubao" tabsHideOnSubPages></ion-tab>
-  <ion-tab [root]="homeRoot" tabTitle="Home" tabIcon="qq" tabsHideOnSubPages></ion-tab>
-  <ion-tab [root]="demoRoot" tabTitle="demo" tabIcon="apps" tabsHideOnSubPages></ion-tab>
-  <ion-tab [root]="mineRoot" tabTitle="我的" tabIcon="person" tabsHideOnSubPages></ion-tab>
+<ion-tabs #mainTabs class="tabs-icon-top tabs-color-active-balanced">
+  <ion-tab [root]="testRoot" tabTitle="微信" tabIcon="icon-chatbubbleoutline" ui-sref="tab.message"
+    tabsHideOnSubPages >
+    <!-- <ion-nav-view animation="slide-left-right" name="tab-friends"></ion-nav-view> -->
+  </ion-tab>
+  <ion-tab [root]="homeRoot" title="通讯录" icon-on="icon-people" tabsHideOnSubPages icon-off="ion-ios-people-outline" ui-sref="tab.friends">
+    <!-- <ion-nav-view animation="slide-left-right" name="tab-friends"></ion-nav-view> -->
+  </ion-tab>
+  <ion-tab [root]="demoRoot" title="发现" icon-on="icon-limi-find" tabsHideOnSubPages icon-off="ion-ios-paperplane-outline"
+    ui-sref="tab.find">
+    <!-- <ion-nav-view animation="slide-left-right" name="tab-find"></ion-nav-view> -->
+  </ion-tab>
+  <ion-tab [root]="mineRoot" title="我" icon-off="icon-person" tabsHideOnSubPages icon-on="ion-ios-person" href="#/tab/setting">
+    <!-- <ion-nav-view animation="slide-left-right" name="tab-setting"></ion-nav-view> -->
+  </ion-tab>
 </ion-tabs>

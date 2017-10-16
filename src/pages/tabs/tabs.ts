@@ -10,7 +10,8 @@ import {Helper} from "../../providers/Helper";
 import {LoginInfo} from "../../model/UserInfo";
 
 @Component({
-  templateUrl: 'tabs.html'
+  templateUrl: 'tabs.html',
+  styles: ['tab.scss'],
 })
 export class TabsPage {
   @ViewChild('mainTabs') tabs: Tabs;
