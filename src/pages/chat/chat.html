@@ -1,0 +1,40 @@
+<!--
+  Generated template for the ChatPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar>
+    <ion-badge start>微信（1）</ion-badge>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <button ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item #popoverContent (click)="presentPopover($event)">
+      <!-- <div #popoverText class="text-to-change"> -->
+      <ion-avatar item-start>
+        <img src="img/avatar-finn.png">
+      </ion-avatar>
+      <h2>Finn</h2>
+      <p #popoverText>I've had a pretty messed up day. If we just...</p>
+      <ion-note item-end>
+        3:43 pm
+        <p>Bell</p>
+      </ion-note>
+      <!-- </div> -->
+    </ion-item>
+  </ion-list>
+</ion-content>

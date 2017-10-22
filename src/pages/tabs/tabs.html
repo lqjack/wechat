@@ -1,5 +1,11 @@
-<ion-tabs>
-  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>
+
+<ion-tabs #mainTabs>
+  <ion-tab [root]="chatTab" tabTitle="微信" tabIcon="chat" tabsHideOnSubPages>
+  </ion-tab>
+  <ion-tab [root]="peopleTab" tabTitle="通讯录" tabIcon="people" tabsHideOnSubPages>
+  </ion-tab>
+  <ion-tab [root]="findTab" tabTitle="发现" tabIcon="find" tabsHideOnSubPages>
+  </ion-tab>
+  <ion-tab [root]="personTab" tabTitle="我" tabIcon="person" tabsHideOnSubPages href="#/tab/setting">
+  </ion-tab>
 </ion-tabs>

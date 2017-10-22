@@ -1,17 +1,18 @@
+import { PeoplePage } from './../people/people';
+import { FindPage } from './../find/find';
+import { PersonPage } from './../person/person';
+import { ChatPage } from './../chat/chat';
 import { Component } from '@angular/core';
-
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
-import { HomePage } from '../home/home';
 
 @Component({
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
 
-  tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  chatTab = ChatPage;
+  personTab = PersonPage;
+  findTab = FindPage;
+  peopleTab = PeoplePage;
 
   constructor() {
 
