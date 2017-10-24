@@ -1,3 +1,4 @@
+import { ChatMessagePage } from './../chat-message/chat-message';
 import { ChatPopPage } from './../chat-pop/chat-pop';
 import { IonicPage, NavController, PopoverController, NavParams } from 'ionic-angular';
 import { Component, ViewChild, ElementRef } from '@angular/core';
@@ -21,8 +22,8 @@ export class ChatPage {
   @ViewChild('popoverText', { read: ElementRef }) text: ElementRef;
 
   constructor(public popoverCtrl: PopoverController,
-              public navCtrl: NavController,
-              public navParams: NavParams) {
+    public navCtrl: NavController,
+    public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
@@ -45,4 +46,7 @@ export class ChatPage {
     });
   }
 
+  openMessage(item) {
+    this.navCtrl.push(ChatMessagePage,{item:item});
   }
+}

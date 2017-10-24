@@ -1,3 +1,4 @@
+import { ChatMessagePage } from './../pages/chat-message/chat-message';
 import { ChatPopPage } from './../pages/chat-pop/chat-pop';
 import { PersonPage } from './../pages/person/person';
 import { FindPage } from './../pages/find/find';
@@ -23,7 +24,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FindPage,
     PeoplePage,
 
-    ChatPopPage
+    ChatPopPage,
+    ChatMessagePage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +41,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FindPage,
     PeoplePage,
 
-    ChatPopPage
+    ChatPopPage,
+    ChatMessagePage
   ],
   providers: [
     StatusBar,
